@@ -76,12 +76,10 @@ textarea {
 }
 
 .wrapper {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .wrapper--slider {
@@ -97,6 +95,7 @@ textarea {
 }
 
 .header__wrapper {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,6 +226,15 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.menu__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .menu__col {
