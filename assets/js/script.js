@@ -57,7 +57,7 @@ widgetItem.forEach((img) => {
       img.closest('.menu').querySelectorAll('.widget__item').forEach((item) => {
          item.classList.remove('active')
       });
-      event.target.classList.add('active');
+      event.currentTarget.classList.add('active');
    });
 });
 
@@ -88,9 +88,9 @@ const swiper = new Swiper('.swiper-container', {
       el: '.swiper-pagination',
       clickable: true,
    },
-   // autoplay: {
-   //    delay: 4000,
-   //    disableOnInteraction: false,
-   // },
+   autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+   },
 
 });
